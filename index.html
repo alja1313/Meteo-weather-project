@@ -3,42 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Meteo App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Singapore</h1>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%
-          <br />
-          Wind: 3.13 km/h
-        </p>
-      </div>
-      <div>⛅ 12°C</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/alja1313" target="_blank"> Olga Slahota</a>,
-      is open-sourced on
-      <a
-        href="https://github.com/alja1313/Meteo-weather-project"
-        target="_blank"
-      >
-        GitHub
-      </a>
-      and hosted on
-      <a href="https://meteo-weather-project.netlify.app/" target="_blank">
-        Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Singapore</h1>
+          <p>
+            Tuesday 14:49, scattered clouds
+            <br />
+            Humidity: 66%
+            <br />
+            Wind: 3.13 km/h
+          </p>
+        </div>
+        <div>⛅ 12°C</div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/alja1313" target="_blank"> Olga Slahota</a>,
+        is open-sourced on
+        <a
+          href="https://github.com/alja1313/Meteo-weather-project"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        and hosted on
+        <a href="https://meteo-weather-project.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
