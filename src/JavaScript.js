@@ -57,19 +57,23 @@ function formatDate(date) {
 }
 
 function displayForecast() {
-  let days = [`Sat`, `Sun`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`];
+  let days = [`Sat`, `Sun`, `Mon`, `Tue`, `Wed`];
   let forecastHtml = "";
 
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `
- <div class="weather-forecast-day"></div>
+ <div class="weather-forecast-day">
  <div class="weather-forecast-date">${day}</div>
  <div class="weather-forecast-icon">⛅</div>
- <div class="weather-forecast-temperatures"></div>
- <span class="weather-forecast-temperature-max"><strong>18°</strong></span>
- <span class="weather-forecast-temperature-min">12°</span>
+ <div class="weather-forecast-temperatures">
+ <div class="weather-forecast-temperature">
+ <strong>18°</strong>
+ </div>
+ <div class="weather-forecast-temperature">12°</div>
+ </div>
+ </div>
  `;
   });
 
