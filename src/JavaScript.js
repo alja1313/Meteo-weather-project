@@ -56,4 +56,26 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let days = [`Sat`, `Sun`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+ <div class="weather-forecast-day"></div>
+ <div class="weather-forecast-date">${day}</div>
+ <div class="weather-forecast-icon">⛅</div>
+ <div class="weather-forecast-temperatures"></div>
+ <span class="weather-forecast-temperature-max"><strong>18°</strong></span>
+ <span class="weather-forecast-temperature-min">12°</span>
+ `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 searchCity("Singapore");
+displayForecast();
