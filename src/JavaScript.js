@@ -33,6 +33,8 @@ function updateWeather(response) {
 
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,7 +58,9 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = [`Sat`, `Sun`, `Mon`, `Tue`, `Wed`];
   let forecastHtml = "";
 
@@ -81,5 +85,10 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
+function getForecast(city) {
+  let apiKey = `3t1efbo10d0b2a5b53045a2c4a8666fe`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
 searchCity("Singapore");
-displayForecast();
