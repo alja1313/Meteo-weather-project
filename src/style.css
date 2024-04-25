@@ -1,14 +1,14 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #fdecff;
   font-family: "Noto Serif", serif;
 }
 
 a {
-  color: #885df1;
+  color: #7f78d2;
 }
 
 .weather-app {
-  background: white;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
@@ -17,27 +17,29 @@ a {
 }
 
 header {
-  border-bottom: 2px solid #f9f7fe;
+  border-bottom: 2px solid #d2d0fe;
   padding: 0 0 30px 0;
 }
 
 .search-form-input {
-  background-color: #f9f7fe;
+  background-color: white;
   border: none;
-  border-radius: 5px;
-  width: 80%;
+  border-radius: 10px;
+  width: 75%;
   padding: 15px 20px;
   font-size: 18px;
 }
 
 .search-form-button {
-  background: #885df1;
-  color: white;
-  font-size: 16px;
+  background: #d2d0fe;
+  color: #6d0c74;
+  font-size: 18px;
+  font-weight: bold;
   padding: 15px 30px;
-  margin-left: 5px;
+  margin-left: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 main {
@@ -50,20 +52,21 @@ main {
 }
 
 .weather-app-city {
+  color: #6d0c74;
   margin: 0;
   font-size: 42px;
   line-height: 48px;
 }
 
 .weather-app-details {
-  color: rgba(39, 33, 66, 0.5);
+  color: #7f78d2;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: #6d0c74;
 }
 
 .weather-app-temperature-container {
@@ -71,30 +74,31 @@ main {
 }
 
 .weather-app-icon {
-  width: 88px;
-  height: 88px;
+  width: 96px;
+  height: 96px;
 }
 
 .weather-app-temperature {
+  color: #6d0c74;
   font-size: 88px;
   font-weight: bold;
   line-height: 88px;
 }
 
 .weather-app-unit {
+  color: #7f78d2;
   font-size: 28px;
   margin-top: 6px;
 }
 
 .weather-forecast {
-  color: black;
+  color: #6d0c74;
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
 }
 
 .weather-forecast-date {
-  color: rgba(39, 33, 66, 0.8);
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -111,7 +115,6 @@ main {
 .weather-forecast-temperatures {
   display: flex;
   justify-content: center;
-  color: #f65282;
   font-size: 15px;
   text-align: center;
   margin-top: 10px;
@@ -119,12 +122,13 @@ main {
 
 .weather-forecast-temperature {
   padding: 0 10px;
+  color: #6d0c74;
 }
 
 footer {
-  color: rgba(0, 0, 0, 0.8);
+  color: #7f78d2;
   text-align: center;
   font-size: 14px;
-  border-top: 2px solid #f9f7fe;
+  border-top: 2px solid #d2d0fe;
   padding: 30px 0 0 0;
 }
